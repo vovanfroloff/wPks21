@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS_Фича_15</title>
+	<style type="text/css">
+		*, *:before, *:after {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #f1f1f1;
+			margin: 25px auto;
+			font-family: sans-serif;
+		}
+		span.title {
+			display: block;
+			text-align: center;
+			margin: 15px auto;
+		}
+		.basicBox {
+			text-transform: uppercase;
+			width: 130px;
+			height: 65px;
+			text-align: center;
+			line-height: 65px;
+			margin: 10px auto;
+			position: relative;
+			cursor: pointer;
+		}
+		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		svg rect {
+			stroke: #536dfe;
+			stroke-width: 1;
+			transition: 0.8s;
+			stroke-dasharray: 400, 0;
+		}
+		.basicBox:hover svg rect {
+			stroke-width: 3;
+			stroke-dasharray: 35, 245;
+			stroke-dashoffset: 25;
+		}
+	</style>
+</head>
+<body>
+	<span class="title">Button SVG Hover</span>
+	<div class="basicBox">
+		Hover
+		<svg width="130" height="65" viewBox="8 8 138 65" xmlns="http://www.w3.org/2888/svg">
+			<rect x='8' fill='none' width='138' height='65'></rect>
+		</svg>
+	</div>
+</body>
+</html>

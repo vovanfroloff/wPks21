@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu-Left</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+		section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.main {
+  background-color: #fb607f;
+}
+.news {
+  background-color: #9b59b6;
+}
+.contacts {
+  background-color: #3498db;
+}
+.portfolio {
+  background-color: #f1c40f;
+}
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+.menu {
+  position: fixed;
+  left: 0;top: 0;
+  z-index: 99;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+.menu_active {
+  transform: translateX(0%);
+}
+.menu-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  flex-direction: column;
+}
+.menu-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  position: absolute;
+  right: -35px;
+  top: 10px;
+}
+.content {
+  transition: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+.content_active {
+  transform: translateX(30%);
+}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+  <div class="menu">
+    <a href="#" class="menu-btn"></a>
+    <nav class="menu-list">
+      <a href="#">Фролов Владимир</a>
+      <a href="#">Новости</a>
+      <a href="#">Контакты</a>
+      <a href="#">Портфолио</a>
+    </nav>
+  </div>
+  <div class="content">
+    <section class="main">
+      <h2>Фролов Владимир</h2>
+    </section>
+    <section class="news">
+      <h2>Новости</h2>
+    </section>
+    <section class="contacts">
+      <h2>Контакты</h2>
+    </section>
+    <section class="portfolio">
+      <h2>Портфолио</h2>
+    </section>
+  </div>
+</div>
+<script type="text/javascript">
+  $('.menu-btn').on('click', function(e) {
+        e.preventDefault();
+        $('.menu').toggleClass('menu_active');
+        $('.content').toggleClass('content_active');
+    })
+</script>
+</body>
+</html>

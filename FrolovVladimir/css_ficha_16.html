@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS_Фича_16</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+		}
+		.container {
+			height: 100vh;
+			background-color: #292929;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.social {
+			color: #fff;
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			width: 400px;
+		}
+		.social__item {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			border: 5px solid #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 25px;
+			transition: all 0.5s;
+			cursor: pointer;
+		}
+		.whatsapp:hover {
+			border-color: #4dc247;
+			box-shadow: 0px 0px 35px #4dc247;
+			color: #4dc247;
+		}
+		.vk:hover {
+			border-color: #305afe;
+			box-shadow: 0px 0px 35px #305afe;
+			color: #305afe;
+		}
+		.twitter:hover {
+			border-color: #00aced;
+			box-shadow: 0px 0px 35px #00aced;
+			color: #00aced;
+		}
+		.instagram:hover {
+			border-color: #bc2a8d;
+			box-shadow: 0px 0px 35px #bc2a8d;
+			color: #bc2a8d;
+		}
+		.google:hover {
+			border-color: #dd4b39;
+			box-shadow: 0px 0px 35px #dd4b39;
+			color: #dd4b39;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul class="social">
+			<li class="social__item whatsapp">
+				<i class="fa fa-whatsapp"></i>
+			</li>
+			<li class="social__item vk">
+				<i class="fa fa-vk"></i>
+			</li>
+			<li class="social__item twitter">
+				<i class="fa fa-twitter"></i>
+			</li>
+			<li class="social__item instagram">
+				<i class="fa fa-instagram"></i>
+			</li>
+			<li class="social__item google">
+				<i class="fa fa-google"></i>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

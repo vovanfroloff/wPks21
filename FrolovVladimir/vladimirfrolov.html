@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frolov Vladimir</title>
+	<style type="text/css">
+		body {
+    margin:0px;
+    padding:0px;
+    font: 14px 'Verdana';
+    background: #292929;
+}
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.mmenuu > li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+}
+ul.mmenuu > li > a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    color: orange;
+    /* Задаю отступ 10px. */
+    padding: 10px;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю цвет. */
+    background-color: #292929;
+}
+ul.mmenuu > li > a:hover {
+    /* Задаю цвет при наведении. */
+    background-color: orange;
+    color: #292929;
+}
+ul.ssubmenuu {
+    position: absolute;
+    width: 240px;
+    top: 37px;
+    left:0px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: white;
+}
+ul.ssubmenuu > li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.ssubmenuu > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color: orange;
+    /* Еще цвет. */
+    background-color: #292929;
+}
+ul.ssubmenuu > li > a:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color: orange;
+    color: #292929;
+    /* Задаю подчеркивание*/
+    text-decoration: underline;
+    border: 2px solid orange;
+}
+ul.mmenuu > li:hover > ul.ssubmenuu {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+.txt1 {
+	color: orange;
+	text-align: center;
+}
+
+	</style>
+</head>
+<body>
+	<ul class="mmenuu">
+    <li><a href=#>Слайдер</a>
+        <ul class="ssubmenuu">
+            <li><a href=slider1.html>Слайдер 1</a></li>
+        </ul>
+    </li>
+    <li><a href=#>CSS Фичи</a>
+        <ul class="ssubmenuu">
+            <li><a href=css_ficha_2.html>CSS Фича 2</a></li>
+            <li><a href=css_ficha_3.html>CSS Фича 3</a></li>
+            <li><a href=css_ficha_4.html>CSS Фича 4</a></li>
+            <li><a href=css_ficha_5.html>CSS Фича 5</a></li>
+            <li><a href=css_ficha_6.html>CSS Фича 6</a></li>
+            <li><a href=css_ficha_7.html>CSS Фича 7</a></li>
+            <li><a href=css_ficha_8.html>CSS Фича 8</a></li>
+            <li><a href=css_ficha_9.html>CSS Фича 9</a></li>
+            <li><a href=css_ficha_10.html>CSS Фича 10</a></li>
+            <li><a href=css_ficha_11.html>CSS Фича 11</a></li>
+            <li><a href=css_ficha_12.html>CSS Фича 12</a></li>
+            <li><a href=css_ficha_13.html>CSS Фича 13</a></li>
+            <li><a href=css_ficha_14.html>CSS Фича 14</a></li>
+            <li><a href=css_ficha_15.html>CSS Фича 15</a></li>
+            <li><a href=css_ficha_16.html>CSS Фича 16</a></li>
+            <li><a href=css_ficha_17.html>CSS Фича 17</a></li>
+            <li><a href=css_ficha_18.html>CSS Фича 18</a></li>
+        </ul>
+    </li>
+</ul>
+<h1 class="txt1">Фролов Владимир</h1>
+</body>
+</html>

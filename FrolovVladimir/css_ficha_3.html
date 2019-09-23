@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D-card</title>
+	<style type="text/css">
+		body {
+  			margin: 0;
+  			background-color: #fb607f;
+		}
+		.section  {
+  			perspective: 1000px;
+		}
+		.container {
+  			width: 680px;
+  			margin: auto;
+  			display: flex;
+  			flex-wrap: wrap;
+  			justify-content: center;
+  			align-items: center;
+  			height: 100vh;
+  			transition: 1s;
+  			transform: rotateX(55deg) rotateZ(-45deg) rotateY(10deg);
+  			transform-style: preserve-3d;
+		}
+		.container-origin {
+  			transform: rotate(0);
+		}
+		img {
+  			max-width: 100%;
+		}
+		.card {
+  			width: 200px;
+  			margin: 10px;
+  			transition: 0.3s;
+		}
+		.card:hover {
+  		cursor: pointer;
+  		transform: translateZ(10px);
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<div class="section">
+  		<div class="container">
+    		<div class="card"><img src="https://codyhouse.co/demo/3d-animated-mockup/img/cd-app-image.png" alt=""></div>
+    		<div class="card"><img src="https://codyhouse.co/demo/3d-animated-mockup/img/cd-app-image.png" alt=""></div>
+    		<div class="card"><img src="https://codyhouse.co/demo/3d-animated-mockup/img/cd-app-image.png" alt=""></div>
+    		<div class="card"><img src="https://codyhouse.co/demo/3d-animated-mockup/img/cd-app-image.png" alt=""></div>
+    		<div class="card"><img src="https://codyhouse.co/demo/3d-animated-mockup/img/cd-app-image.png" alt=""></div>
+    		<div class="card"><img src="https://codyhouse.co/demo/3d-animated-mockup/img/cd-app-image.png" alt=""></div>
+  		</div>
+	</div>
+	<script type="text/javascript">
+		$('.card').on('click', function() {
+    		$('.container').toggleClass('container-origin');
+		})
+	</script>
+</body>
+</html>
